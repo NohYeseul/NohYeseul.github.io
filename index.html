@@ -10,6 +10,43 @@
         console.log(cars);
         }
     </script>
+    <script>
+        for (name in document) {
+            console.log(name);}
+    </script>
+    <script>
+        var yeseul = ['21561045','노예슬입니다','프로그래밍 D반입니다'+'<br/>'];
+        function aboutMe(){
+            for (var i = 0; i < yeseul.length; i++){
+                document.write(yeseul);
+            }
+        }
+        aboutMe();
+        
+        var str = {학교:'계원예술대학교',학년:'2학년'+'<br />'};
+        var name = '';
+        var koreanName = [];
+        
+        for(name in str){
+            koreanName.push(str[name]);
+        } 
+        for (var i = 0; i < koreanName.length; i++){
+                document.write(koreanName);
+        }
+        var actor = '좋아하는 남자배우'+'<br/>';
+        document.write(actor);
+        function favorite (first,second,third){
+            document.write('1.'+ first +'<br/>' + '2.'+ second +'<br/>' + '3.' + third);
+            
+        }
+        favorite('강동원','공유','김수현'+'<br/>');
+
+        var value = 0;
+        while (value < 5){
+            document.write( value +'하하하 취업준비..'+'<br/>');
+            value++;
+        }
+    </script>
 </head>
 <body>
 </body>
