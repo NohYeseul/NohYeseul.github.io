@@ -2,52 +2,125 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <script>
-        var cars = ['sonata', 'spark', 'malibu', 'sorento']; 
-        var rev = cars.reverse();
-        for (var i=0; i<cars.length; i++){
-        console.log(cars);
-        }
-    </script>
-    <script>
-        for (name in document) {
-            console.log(name);}
-    </script>
-    <script>
-        var yeseul = ['21561045','노예슬입니다','프로그래밍 D반입니다'+'<br/>'];
-        function aboutMe(){
-            for (var i = 0; i < yeseul.length; i++){
-                document.write(yeseul);
-            }
-        }
-        aboutMe();
-        
-        var str = {학교:'계원예술대학교',학년:'2학년'+'<br />'};
-        var name = '';
-        var koreanName = [];
-        
-        for(name in str){
-            koreanName.push(str[name]);
-        } 
-        for (var i = 0; i < koreanName.length; i++){
-                document.write(koreanName);
-        }
-        var actor = '좋아하는 남자배우'+'<br/>';
-        document.write(actor);
-        function favorite (first,second,third){
-            document.write('1.'+ first +'<br/>' + '2.'+ second +'<br/>' + '3.' + third);
-            
-        }
-        favorite('강동원','공유','김수현'+'<br/>');
-
-        var value = 0;
-        while (value < 5){
-            document.write( value +'하하하 취업준비..'+'<br/>');
-            value++;
-        }
-    </script>
+    <title>WE ARE THE BAND</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="menuwrapper">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">MUSIC</a></li>
+                    <li><a href="#">TOURS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div> 
+        </nav>
+    </header>
+    <div class="sectionwrapper">
+
+            <section class="page1">
+                <div class="main">
+                    <img class="guitar" src="img/guitar.png" width="624" height="872" alt="guitarimg" />
+                    <img class="word" src="img/word.png" width="377" height="549" alt="word" />
+                    <h1>WE ARE<br/><span class="brown">THE BAND</span></h1>
+                </div>
+            </section>
+            <section class="page2">
+            <div class="imgslider">
+                <div class="sliderwrapper">
+                    <ul>
+                        <li>Meet our band
+                            <p>
+                                Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't heard of them PBR&amp;B marfa seitan. Four dollar toast wayfarers helvetica etsy, affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo booth. Yr fixie plaid kogi.
+                            </p>
+                        </li>
+                        <li>Meet our band
+                            <p>
+                                Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't heard of them PBR&amp;B marfa seitan. Four dollar toast wayfarers helvetica etsy, affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo booth. Yr fixie plaid kogi.
+                            </p>
+                        </li>
+                        <li>Meet our band
+                            <p>
+                                Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't heard of them PBR&amp;B marfa seitan. Four dollar toast wayfarers helvetica etsy, affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo booth. Yr fixie plaid kogi.
+                            </p>
+                        </li>
+                        <li>Meet our band
+                            <p>
+                                Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't heard of them PBR&amp;B marfa seitan. Four dollar toast wayfarers helvetica etsy, affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo booth. Yr fixie plaid kogi.
+                            </p>
+                        </li>
+                        <li>Meet our band
+                            <p>
+                                Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't heard of them PBR&amp;B marfa seitan. Four dollar toast wayfarers helvetica etsy, affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo booth. Yr fixie plaid kogi.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            </section>
+            <section class="page3">
+             <div>
+                    <img src="img/cd.png" width="780" height="338" alt="cd" />
+                    <div>
+                        <h3>Discography</h3>
+                        <ul>
+                            <li>Surprise Without Flaws</li>
+                            <li>Mists Of A Shadow</li>
+                            <li>Heroes Of The Sun</li>
+                            <li>Picure Of The Past</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Surprise Without Flaws</h4>
+                        <ul>
+                            <li>01. Clouds In The Forest</li>
+                            <li>02. Rat In The River</li>
+                            <li>03. Giants And Companions</li>
+                            <li>04. Ashamed Of Light</li>
+                            <li>05. Doubting The Forest</li>
+                            <li>06. Criminals Of The Lake</li>
+                            <li>07. Curse Of Eternity</li>
+                            <li>08. Fog In My Town</li>
+                            <li>09. Serpent In The Mountains</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="page4">
+            <h1>contact<br/><span class="brown">+48 202 - 555 - 0114</span></h1>
+                <hr/>
+                <form>
+                    <button type="submit">SUBSCRIBE</button>
+                    <input type="text" title="email" id="email_input" placeholder="your@email.com"/>
+                </form>
+                <a href="https://www.facebook.com/"><img src="img/facebook.png" width="33" height="59" alt="facebook" /></a>
+                <a href="https://www.youtube.com/?gl=KR&hl=ko"><img src="img/youtube.png" width="61" height="59" alt="youtube" /></a>
+                <img src="img/guitar2.png" width="1259" height="428" alt="guitars" />
+            </section>
+
+    
+    <footer>
+        <div>
+            <p>
+                Copyright 2015 © by The Band
+            </p>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">MUSIC</a></li>
+                <li><a href="#">TOURS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+    
 </body>
 </html>
