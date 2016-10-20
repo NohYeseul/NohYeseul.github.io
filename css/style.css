@@ -67,7 +67,7 @@ article .page4 {
 footer {
     background-color:#808080; height:310px;
 }
-footer > div {width:1170px; margin: 0 auto; text-align: center; }
+footer > div {width:1170px; margin: 0 auto; text-align: center;}
 /*
 nav {position:relative;}
 nav .menuwrapper ul {position: absolute; z-index: 999; margin-left: 206px; margin-top: 80px;}
