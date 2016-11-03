@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $('.slider').each(function() {
   var $this = $(this);/*slider_group의 부모요소?*/
   var $group = $this.find('.slide_group');/*find-찾은 요소에서 특정 자식요소만 찾기 :  .find("선택자") this의 자식요소인 slide_group을 선언 */
@@ -89,6 +88,4 @@ $('.slider').each(function() {
 
 
 
-=======
->>>>>>> origin/master
 
