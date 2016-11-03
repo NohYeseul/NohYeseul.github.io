@@ -126,7 +126,7 @@ header .menuwrapper nav ul li a:hover {color: black;}
 }
 /*section02*/
 #page2 {
-    background-color: #f8f7f7;
+    background-color: #f2f0ef;
 }
 #page2 .imgslider {
     position: relative;
@@ -137,22 +137,23 @@ header .menuwrapper nav ul li a:hover {color: black;}
     height: 100%;
 }
 
-
-
+/*section02-slider*/
 .slider {
   margin: 0 auto;
-  max-width: 940px;
+  max-width: 1000px;
 }
 
 .slide_viewer {
-  height: 340px;
+  height: 500px;
   overflow: hidden;
   position: relative;
+    
 }
 
 .slide_group {
+  position: absolute;
+  top: 50%;
   height: 100%;
-  position: relative;
   width: 100%;
 }
 
@@ -194,14 +195,14 @@ slide_btn.active, .slide_btn {
 .directional_nav {
   height: 340px;
   margin: 0 auto;
-  max-width: 940px;
+  max-width: 1170px;
   position: relative;
   top: -340px;
 }
 
 .previous_btn {
   bottom: 0;
-  left: 100px;
+  left: 0;
   margin: auto;
   position: absolute;
   top: 0;
@@ -211,7 +212,7 @@ slide_btn.active, .slide_btn {
   bottom: 0;
   margin: auto;
   position: absolute;
-  right: 100px;
+  right: 0;
   top: 0;
 }
 
@@ -368,7 +369,7 @@ video {
 
 /*section03*/
 #page3 {
-    background-color: #f1eeed;
+    background-color: #f8f8f8;
 }
 
 footer {

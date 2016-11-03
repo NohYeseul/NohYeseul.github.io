@@ -24,16 +24,19 @@ $('.slider').each(function() {
       slideLeft = '-100%';
       animateLeft = '100%';
     }/*슬라이더 이동 100%*/
-    
+
     $slides.eq(newIndex).css({/*slide(4개)들을 */
         display: 'block', 
-        left: slideLeft/*eq(인덱스번호)css중에 left는 slideLeft인 100% */
+        left: slideLeft /*eq(인덱스번호)css중에 left는 slideLeft인 100% */
     });
     $group.animate({/*눌러서 애니메이션을 실행할때 함수를 실행해라*/
       left: animateLeft/*left는 animateLeft -100%*/
     }, function() {
+    $slides.eq(currentIndex).css({
+        display: 'none'
+      });/*eq(currentIndex)css중에 display:block;내용반복안되도록?*/
       $slides.eq(newIndex).css({/*slider index값을 css left:0값주고*/
-        left: 0/*css에 left는0값 부여 */
+        left: 0/*css에 left는0값 부여*/
       });
       $group.css({/*전체 그룹 css값을 left:0을 준다*/
         left: 0/*css에 left는0값 부여*/
