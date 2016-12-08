@@ -8,7 +8,7 @@ window.Formaweb.Player = function() {
     init();
     function init() {
         current = 0;//현재위치 값=0
-        audio = $('audio')[0];//audio 0값을 할당
+        audio = $('audio')[0];
         playlist = [{//음악리스트
             name: '01. Clouds In The Forest',
             path: 'http://hiperload.com/s/jm4i99w4f/s.mp3',//경로지정
@@ -26,7 +26,7 @@ window.Formaweb.Player = function() {
             path: 'http://hiperload.com/s/vb8q20z8u/s.mp3',
             id: 'track04'
         }];
-        len = playlist.length - 1;//플레이리스트의 길이-1,인덱스가 0부터 시작해서?4-1
+        len = playlist.length - 1;//플레이리스트의 길이-1,4-1
         //리스트의 길이-1
         // audio.volume = 0.10;
         run(playlist[0], audio);
@@ -45,8 +45,8 @@ window.Formaweb.Player = function() {
             return false;
         });//prev버튼을 클릭했을때
         $('.audio.play').on('click', function() {
-            var music_id = $(this).attr('data-music-id');
-            if (music_id != undefined) {
+            var music_id = $(this).attr('data-music-id');// 태그의 속성(Attributes)의 값을 읽어오거나 속성을 추가및 재설정
+            if (music_id != undefined) { //music_id 가 undefined와 다를때
                 playById(music_id);
             }
             return false;
@@ -54,7 +54,7 @@ window.Formaweb.Player = function() {
     }
     
     function run(music, player) {
-        $('.audio.name').text(music.name);//클래스name에 text메소드는 해석하지 않고 태그를 그대로 노출하여렌더링
+        $('.audio.name').text(music.name);//클래스name에 text메소드는 해석하지 않고 태그를 그대로 노출하여렌더링 
         player.src = music.path;//경로지정
         /*audio.load();*/
         audio.play();//오디오 재생
@@ -71,7 +71,7 @@ window.Formaweb.Player = function() {
     }
     function playById(trackId) {/*리스트를 누르면 해당 오디오가 나옴*/
         var playlist_id = undefined; //playlist_id변수선언undefined대입
-        $.each(playlist, function(index, value) {
+        $.each(playlist, function(index, value) {//객체만큼 반복 선택된 요소들에 함수 실행
             if (value.id == trackId) {//만약 id값이 trackId와 같다면
                 playlist_id = index;/*리스트id값에 인덱스값 대입*/
             }
